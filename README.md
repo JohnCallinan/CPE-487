@@ -2,7 +2,10 @@
 
 ## Description of the Expected Behavior
 
+The 
+
 ## How to Run the Project
+
 ### 1. Create a new RTL project pong in Vivado Quick Start
 * Create seven new source files of file type VHDL called clk_wiz_0, clk_wiz_0_clk_wiz, vga_sync, bat_n_ball, leddec16, rng_table and pong
 * Create a new constraint file of file type XDC called **_pong_**
