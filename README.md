@@ -40,7 +40,7 @@ The next file edited is bat_n_ball where we created the ball spawn logic as well
 
 Now to describe the way the RNG works, we found an elegant solution to get our pseudo randomness in ball spawn. We made a new file called RNG_table which houses an array from 0 to 137. From index 0 to 78 the values of 1 to 79 are written in an arbitrary order. Values 79 to 137 have values 1 to 59 in an arbitrary order. We have 2  standard logic vectors constantly incrementing and resetting between 2 values on every rising edge, one for the lower indexes and another for the higher ones. When a ball is to be spawned, the values of whatever 2 indexes the vectors are on gets portmapped over to bat_n_ball to be used. 
 
-Finally, we had to change the xdc file in order for all the new inputs we are using to work properly. We added buttons up and down since left and right were already implemented. Originally we had a lot of new inputs that needed to be put into the xdc, however we were able to eliminate all of them and make the code much cleaner and less hardware intensive.
+Finally, we had to change the xdc file in order for all the new inputs we are using to work properly. We added buttons up and down since left and right were already implemented. Originally we had a lot of new inputs that needed to be put into the xdc, however we were able to eliminate all of them and make the code much more optimized and less hardware intensive.
 
 
 ## Conclusion
